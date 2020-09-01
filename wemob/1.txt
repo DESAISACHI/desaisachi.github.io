@@ -1,0 +1,13 @@
+<script type="text/javascript">
+fetch('https://api.jsonbin.io/b/5efdf1000bab551d2b6ab1c9/1').then( (apidata) =>{
+    //console.log(apidata);
+    return apidata.json();
+}).then((actualdata) =>{
+    console.log(actualdata);
+    
+    //console.log(actualdata.PurchasedServicesType[1]);
+}).catch((error) =>{
+    console.log(error);
+});
+     
+</script>
